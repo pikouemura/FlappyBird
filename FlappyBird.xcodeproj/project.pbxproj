@@ -14,6 +14,8 @@
 		5B673A481D1B863400E585E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B673A461D1B863400E585E3 /* LaunchScreen.storyboard */; };
 		5B673A531D1B863400E585E3 /* FlappyBirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B673A521D1B863400E585E3 /* FlappyBirdTests.swift */; };
 		5B673A5E1D1B863400E585E3 /* FlappyBirdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B673A5D1D1B863400E585E3 /* FlappyBirdUITests.swift */; };
+		5B673A6C1D1B866600E585E3 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B673A6B1D1B866600E585E3 /* SpriteKit.framework */; };
+		5B673A6E1D1B891700E585E3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B673A6D1D1B891700E585E3 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		5B673A591D1B863400E585E3 /* FlappyBirdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlappyBirdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B673A5D1D1B863400E585E3 /* FlappyBirdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlappyBirdUITests.swift; sourceTree = "<group>"; };
 		5B673A5F1D1B863400E585E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B673A6B1D1B866600E585E3 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		5B673A6D1D1B891700E585E3 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B673A6C1D1B866600E585E3 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 		5B673A311D1B863300E585E3 = {
 			isa = PBXGroup;
 			children = (
+				5B673A6B1D1B866600E585E3 /* SpriteKit.framework */,
 				5B673A3C1D1B863400E585E3 /* FlappyBird */,
 				5B673A511D1B863400E585E3 /* FlappyBirdTests */,
 				5B673A5C1D1B863400E585E3 /* FlappyBirdUITests */,
@@ -103,6 +109,7 @@
 				5B673A441D1B863400E585E3 /* Assets.xcassets */,
 				5B673A461D1B863400E585E3 /* LaunchScreen.storyboard */,
 				5B673A491D1B863400E585E3 /* Info.plist */,
+				5B673A6D1D1B891700E585E3 /* GameScene.swift */,
 			);
 			path = FlappyBird;
 			sourceTree = "<group>";
@@ -193,6 +200,7 @@
 				TargetAttributes = {
 					5B673A391D1B863400E585E3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8HDW23J2P5;
 					};
 					5B673A4D1D1B863400E585E3 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -256,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B673A6E1D1B891700E585E3 /* GameScene.swift in Sources */,
 				5B673A401D1B863400E585E3 /* ViewController.swift in Sources */,
 				5B673A3E1D1B863400E585E3 /* AppDelegate.swift in Sources */,
 			);
@@ -399,10 +408,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FlappyBird/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.hiro.uemura.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +423,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FlappyBird/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.hiro.uemura.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
