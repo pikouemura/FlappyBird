@@ -201,7 +201,7 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
             let under_wall_y = CGFloat(under_wall_lowest_y + random_y)
             
             // キャラが通り抜ける隙間の長さ
-            let slit_length = self.frame.size.height / 4
+            let slit_length = self.frame.size.height / 5
             
             // 下側の壁を作成
             let under = SKSpriteNode(texture: wallTexture)
