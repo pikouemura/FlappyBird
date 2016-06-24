@@ -16,6 +16,8 @@
 		5B673A5E1D1B863400E585E3 /* FlappyBirdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B673A5D1D1B863400E585E3 /* FlappyBirdUITests.swift */; };
 		5B673A6C1D1B866600E585E3 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B673A6B1D1B866600E585E3 /* SpriteKit.framework */; };
 		5B673A6E1D1B891700E585E3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B673A6D1D1B891700E585E3 /* GameScene.swift */; };
+		5B7C7C181D1D18C400B84E56 /* coin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B7C7C171D1D18C400B84E56 /* coin.mp3 */; };
+		5B7C7C1A1D1D1B1E00B84E56 /* jump.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5B7C7C191D1D1B1E00B84E56 /* jump.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		5B673A5F1D1B863400E585E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B673A6B1D1B866600E585E3 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		5B673A6D1D1B891700E585E3 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		5B7C7C171D1D18C400B84E56 /* coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = coin.mp3; path = ../../../../../Desktop/coin.mp3; sourceTree = "<group>"; };
+		5B7C7C191D1D1B1E00B84E56 /* jump.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = jump.mp3; path = ../../../../../Desktop/jump.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		5B673A3C1D1B863400E585E3 /* FlappyBird */ = {
 			isa = PBXGroup;
 			children = (
+				5B7C7C161D1D18AB00B84E56 /* music */,
 				5B673A3D1D1B863400E585E3 /* AppDelegate.swift */,
 				5B673A3F1D1B863400E585E3 /* ViewController.swift */,
 				5B673A411D1B863400E585E3 /* Main.storyboard */,
@@ -130,6 +135,15 @@
 				5B673A5F1D1B863400E585E3 /* Info.plist */,
 			);
 			path = FlappyBirdUITests;
+			sourceTree = "<group>";
+		};
+		5B7C7C161D1D18AB00B84E56 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				5B7C7C191D1D1B1E00B84E56 /* jump.mp3 */,
+				5B7C7C171D1D18C400B84E56 /* coin.mp3 */,
+			);
+			name = music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,8 +252,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B673A481D1B863400E585E3 /* LaunchScreen.storyboard in Resources */,
+				5B7C7C1A1D1D1B1E00B84E56 /* jump.mp3 in Resources */,
 				5B673A451D1B863400E585E3 /* Assets.xcassets in Resources */,
 				5B673A431D1B863400E585E3 /* Main.storyboard in Resources */,
+				5B7C7C181D1D18C400B84E56 /* coin.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +515,7 @@
 				5B673A641D1B863400E585E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B673A651D1B863400E585E3 /* Build configuration list for PBXNativeTarget "FlappyBirdTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +524,7 @@
 				5B673A671D1B863400E585E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B673A681D1B863400E585E3 /* Build configuration list for PBXNativeTarget "FlappyBirdUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +533,7 @@
 				5B673A6A1D1B863400E585E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
